@@ -19,7 +19,7 @@ app.get("/password", (req, res) => {
   let password = "";
   for (let i = 0; i < limiteCaracteres; i++) {
     console.log("En el for");
-    let random = Math.floor(Math.random() * 14);
+    let random = Math.floor(Math.random() * abc.length);
     password = password + abc[random];
   }
   console.log("Afuera del for");
